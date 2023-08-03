@@ -9,6 +9,9 @@ sreen and (min-height:320px) and (orientation:landscape) {
        padding: 0;
        margin: 0;
     }
+    li{
+        list-style: none;
+    }
     .footer-head, .footer-information, .footer-social, .footer-openingHour{
         position: relative;
         border-top: 1px solid black;

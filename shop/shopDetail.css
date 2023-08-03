@@ -17,7 +17,7 @@ sreen and (min-height:320px) and (orientation:landscape) {
     .wrap{
         width: 90%;
         margin: 0 auto;
-        height: 100vh;
+        height: 200vh;
     }
     
     section{
@@ -118,6 +118,7 @@ sreen and (min-height:768px) and (orientation:landscape){
         justify-content: center; 
         position: relative;    
         top: 5rem;
+        height: 130vh;
     }
     .main-img{
         width: 20rem;
