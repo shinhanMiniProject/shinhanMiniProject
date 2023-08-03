@@ -50,9 +50,11 @@
   /* about section */
 
   .info-container {
-    margin: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
     padding-top: 2rem;
     min-height: 70vh;
+    max-width: 87rem;
   }
 
   .info-container p {
@@ -76,11 +78,15 @@
   section footer {
     padding-bottom: 5rem;
     border-bottom: 1px solid black;
+    max-width: 87rem;
+    margin: 0 auto;
   }
 
   /* instagram & youtube */
   .sns-container {
-    margin: 1rem 1rem 5rem;
+    max-width: 87rem;
+    margin: 0 auto;
+    padding: 1rem 1rem 5rem;
   }
 
   .sns-container header {
@@ -114,6 +120,7 @@
     display: flex;
     gap: 1rem;
     position: relative;
+    align-items: center;
   }
 
   .gallary-list li {
@@ -127,7 +134,7 @@
 
   .work-container .gallary-list li:nth-child(2n) img {
     height: 10rem;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
   }
 
   .sns-container.instagram .gallary-list {
@@ -145,6 +152,7 @@
   .youtube iframe {
     width: 100%;
     border: none;
+    min-height: 13rem;
   }
 
   /* animated */
@@ -169,7 +177,7 @@
       transform: translateX(0);
     }
     70% {
-      transform: translateX(-300%);
+      transform: translateX(-100%);
     }
     100% {
       transform: translateX(0);
@@ -181,7 +189,7 @@
       transform: translateX(0);
     }
     70% {
-      transform: translateX(calc((450vw + 9rem) * -1));
+      transform: translateX(-80rem);
     }
     100% {
       transform: translateX(0);
@@ -203,10 +211,6 @@
 
 @media screen and (min-width: 768px) {
   /* tablet */
-  #wrap {
-    width: 90%;
-    margin: 0 auto;
-  }
 
   .info-container {
     min-height: 50vh;
@@ -233,9 +237,6 @@
 
 @media screen and (min-width: 1024px) {
   /* pc */
-  #wrap {
-    width: 80%;
-  }
 
   .info-container {
     margin-top: 4rem;
@@ -273,12 +274,24 @@
     height: 36rem;
   }
 
+  @keyframes work-swipe {
+    0% {
+      transform: translateX(0);
+    }
+    70% {
+      transform: translateX(-60%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
   @keyframes insta-swipe {
     0% {
       transform: translateX(0);
     }
     70% {
-      transform: translateX(-65rem);
+      transform: translateX(-60rem);
     }
     100% {
       transform: translateX(0);

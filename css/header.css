@@ -10,6 +10,13 @@
   nav a {
     text-decoration: none;
   }
+
+  #header-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #f1f2e1;
+  }
   
   header .header-container {
     display: flex;

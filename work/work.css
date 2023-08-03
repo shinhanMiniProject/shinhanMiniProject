@@ -20,6 +20,7 @@
         width: 1000px;
         height: 290px;
         margin: auto;
+        padding-top: 50px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -29,6 +30,7 @@
     /* 상단 main section */
     #mainwrap section {
         /* display: inline-block; */
+        margin-top: 0;
         width: 50%;
     }
     .fadeIn {
@@ -61,6 +63,7 @@
         width: 1000px;
         margin: auto;
         padding: 0;
+        padding-bottom: 30px;
     }
     .workcontent ul {
         display: flex;
@@ -170,6 +173,7 @@
         margin: auto;
         padding: 0;
         padding-top: 30px;
+        padding-bottom: 30px;
     }
     .workcontent ul {
         /* display: block; */
@@ -202,7 +206,7 @@
         position: relative;
         width: 30vw;
         height: 1vh;
-        top: -30vh;
+        top: -50em;
         left: 5vw;
         opacity: 0;
         color: white;
@@ -216,6 +220,7 @@
     .image {
         position: relative;
         width: 100%;
+        height: 100vh;
         opacity: 0;
         transform: translateY(80px);
         transition: opacity 1s, transform 1.5s;
@@ -280,6 +285,7 @@
         margin: auto;
         padding: 0;
         padding-top: 30px;
+        padding-bottom: 30px;
     }
     .workcontent ul {
         /* display: block; */
