@@ -12,6 +12,11 @@ and (orientation:landscape){
     background-color: #f1f2e1;
 }
 
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('../font/omyu_pretty.woff2');
+}
+
 body{
     font-family:'omyu_pretty';
 }
