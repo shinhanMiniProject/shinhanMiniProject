@@ -22,6 +22,7 @@ sreen and (min-height:320px) and (orientation:landscape) {
         bottom: 0;
         position: absolute;
         height: 10rem;
+        
     }
     
     section{
