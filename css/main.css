@@ -120,6 +120,7 @@
     display: flex;
     gap: 1rem;
     position: relative;
+    align-items: center;
   }
 
   .gallary-list li {
@@ -133,7 +134,7 @@
 
   .work-container .gallary-list li:nth-child(2n) img {
     height: 10rem;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
   }
 
   .sns-container.instagram .gallary-list {
