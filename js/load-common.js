@@ -1,5 +1,5 @@
 window.onload = () => {
-  fetch("./common/header.html")
+  fetch("../common/header.html")
   .then(response => response.text())
   .then(data => {
     const temp = document.createElement('div');
