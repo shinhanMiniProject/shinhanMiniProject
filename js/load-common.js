@@ -26,7 +26,7 @@ window.onload = () => {
     });
   });
 
-  fetch("./common/footer.html")
+  fetch("../common/footer.html")
   .then(response => response.text())
   .then(data => {
     const temp = document.createElement('div');
