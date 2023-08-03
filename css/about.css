@@ -12,81 +12,6 @@ and (orientation:landscape){
     background-color: #f1f2e1;
 }
 
-.logo img{
-    display: block;
-    max-width:74px;
-    height: 30px;
-    /* margin-top:3px; */
-}
-
-header div.nav_logo{
-    border-right: 1px solid black;
-    border-left:1px solid black;
-    padding: 3px 0;
-
-}
-
-.main_menu{
-    display: block;
-    margin-top:1vh;
-    margin-right: 1vw;; 
-    width:20px;
-    height: 30px;
-    color: transparent;
-    background:linear-gradient(black 20%, transparent 20%);
-    background-size:100% 10px;
-}
-
-
-nav.menu{
-    /* display:none;  => a태그의 배치를 지정하고 display none하기*/
-    display:none;
-    position: absolute;
-    top: 0;
-    bottom:0;
-    width: 85vw;
-    background-color: #f1f2e1;
-
-}
-
-nav.menu ul{
-    margin-top: 60px;
-}
-nav.menu ul li{
-    list-style: none;
-}
-
-nav.menu li a{
-    display:block;
-    padding: 3vh 5vw;
-    font-size:1rem;
-    border-bottom:1px solid #fff;
-    text-decoration: none;
-    color:black;
-}
-
-nav.menu_side ul {
-    margin:2px;
-}
-
-nav.menu_side li{
-    list-style: none;
-}
-
-nav.menu_side li a{
-    text-decoration: none;
-}
-
-header{
-    /* border:1px solid red; */
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* margin:0 ;
-    padding:10px; */
-    height: 5vh;
-    /* border-bottom: 2px solid black; */
-}
 
 img{
     display:block;
@@ -111,6 +36,7 @@ img{
 .content{
     /* border:1px solid red; */
     padding: 20px;
+    font-size:0.8rem;
 }
 
 
@@ -136,6 +62,7 @@ img{
 .title_content p{
     font-weight: bold;
     color:black;
+    font-size:1rem;
 
 }
 
@@ -143,6 +70,7 @@ img{
     /* border:1px solid blue; */
     padding:20px;
     border-bottom:1px solid silver;
+    font-size:0.8rem;
 
 }
 
@@ -150,7 +78,7 @@ div.content_kr{
     position: relative;
     animation-name: about_ani_kr;
     animation-duration: 1.5s;
-
+    font-size:0.8rem;
 }
 
 @keyframes about_ani_kr{
@@ -168,7 +96,7 @@ div.content_en{
     position: relative;
     animation-name: about_ani_en;
     animation-duration: 2.5s;
-
+    font-size:0.8rem;
 }
 
 @keyframes about_ani_en{
@@ -269,14 +197,16 @@ section{
     justify-content: flex-start;
     
 }
+.pad{
+    width:10%;
+}
 
 .title{
     width:25%;
-    /* visibility:hidden; */
 }
 
 .title div{
-    width:35%;
+    width:28%;
     border:1px solid black;
 }
 
@@ -292,5 +222,25 @@ section{
     margin-right:30px;
 }
 
+title .line, h4{
+    position:sticky;
+    top:0px;
+}
+
+div.content_kr{
+    font-size:0.9rem;
+}
+
+div.content_en{
+    font-size:0.9rem;
+}
+
+div.service_content{
+    font-size:1rem;
+}
+
+div.content{
+    font-size:1rem;
+}
 
 }
