@@ -21,9 +21,11 @@ window.onload = () => {
     const $closeBtn = document.querySelector('.close-btn');
     if (!$closeBtn) return;
 
-    $closeBtn.addEventListener('click', () => {
-      $gnb.classList.remove('active');
-    });
+    [$closeBtn, $gnb].forEach($e => {
+      $e.addEventListener('click', () => {
+        $gnb.classList.remove('active');
+      });
+    })
   });
 
   fetch("./common/footer.html")
