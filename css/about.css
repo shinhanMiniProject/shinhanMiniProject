@@ -12,14 +12,30 @@ and (orientation:landscape){
     background-color: #f1f2e1;
 }
 
-
-img{
-    display:block;
-    width:100%;
-    height:320px;
-    margin:2px;
-    border-bottom:2px solid black;
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 320px; 
 }
+
+.image-container img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease; 
+
+}
+
+.image-container .hover-image {
+    opacity: 0; 
+}
+
+.image-container:hover .hover-image {
+    opacity: 1;
+  }
+
 
 .title{
     display: inline-block;
@@ -167,10 +183,12 @@ and (orientation:landscape){
     margin-right:100px;
 }
 
-img{
-    height:500px;
-    border-bottom:2px solid black;
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 500px; 
 }
+
 
 
 
@@ -185,9 +203,10 @@ and (orientation:landscape){
         margin:0 auto;
 }
 
-img{
-    height:650px;
-    border-bottom:2px solid black;
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 650px; 
 }
 
 section{

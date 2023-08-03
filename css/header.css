@@ -1,4 +1,3 @@
-
 @media screen and (min-width: 320px) {
   nav ul {
     margin: 0.2rem;
@@ -114,3 +113,85 @@
     transform: rotate(-45deg);
   }
 }
+
+@media screen and (min-width:1024px){
+
+header .header-container {
+    display: flex;
+    border-bottom: 1px solid black;
+    min-height: 5rem;
+    
+}
+
+#logo {
+  border-left: 1px solid #f1f2e1;
+  border-right: 1px solid #f1f2e1;
+}
+
+#logo img {
+  display: block;
+  max-width: 10rem;
+  height: 3.5rem;
+  /* 가운데 정렬 */
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translate(-80%, -50%);
+}
+
+.gnb-btn span{
+  visibility: hidden;
+}
+
+#gnb{
+  display:flex;
+  position: static;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0);
+  border-right:1px solid black;
+  border-left:1px solid black;
+}
+
+#gnb ul {
+  margin: 2px;
+  padding: 2px;
+  display:flex;
+  justify-content: space-around;
+}
+
+#gnb ul li{
+  list-style: none;
+}
+
+#gnb ul li a{
+  font-size: 1rem;
+  font-weight: bold;
+  padding:20px;
+  color:black;
+}
+
+#gnb a:hover{
+  color:silver;
+  border-bottom: black;
+}
+
+.side-menu a:hover{
+  color:silver;
+}
+
+#gnb .close-btn::before, #gnb .close-btn::after {
+  position:static;
+}
+
+.side-menu ul{
+  padding-right:20px;
+}
+
+.side-menu a{
+  font-weight: bold;
+  color:black;
+}
+
+}
+
+
