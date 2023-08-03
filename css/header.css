@@ -75,7 +75,7 @@
   #gnb > ul {
     margin: 0;
     padding: 0;
-    width: 85vw;
+    width: 19rem;
     background-color: #f1f2e1;
     height: 100%;
     padding-top: 4rem;
@@ -118,7 +118,7 @@
     /* display: none; */
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1s 0s ease-in-out;
+    transition: max-height 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
   #gnb input[type="checkbox"]:checked ~ .sub-menu {
@@ -139,7 +139,7 @@
     height: 1.5rem;
     position: absolute;
     top: 2rem;
-    right: 1rem;
+    left: 20rem;
     color: transparent;
   }
 
