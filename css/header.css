@@ -31,7 +31,7 @@
   #logo img {
     display: block;
     max-width: 4.6rem;
-    height: 2rem;
+    min-height: 2rem;
     /* 가운데 정렬 */
     position: absolute;
     top: 50%;
@@ -40,7 +40,7 @@
   }
 
   .gnb-btn, .side-menu {
-    margin-right: 1rem;
+    padding-right: 1rem;
     min-width: 5.5rem;
   }
 
@@ -72,7 +72,7 @@
     display: block;
   }
   
-  #gnb ul {
+  #gnb > ul {
     margin: 0;
     padding: 0;
     width: 85vw;
@@ -85,6 +85,53 @@
     display: block;
     padding: 1rem;
     font-size: 1rem;
+  }
+
+  #gnb .top-level {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #gnb .open-btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-right: 1rem;
+  }
+
+  #gnb .open-btn img {
+    width: 100%;
+    transform: rotate(-90deg);
+    transition: transform 0.5s;
+  }
+
+  #gnb input[type="checkbox"] {
+    display: none;
+  }
+
+  #gnb input[type="checkbox"]:checked ~ .top-level label img {
+    transform: rotate(90deg);
+    transition: transform 0.5s;
+  }
+
+  #gnb .sub-menu {
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s 0s ease-in-out;
+  }
+
+  #gnb input[type="checkbox"]:checked ~ .sub-menu {
+    /* display: block; */
+    max-height: 500px;
+  }
+
+  #gnb .sub-menu ul {
+    padding-left: 2rem;
+  }
+
+  #gnb .sub-menu li a {
+    padding: 0.5rem;
   }
 
   #gnb .close-btn {
@@ -111,5 +158,17 @@
   
   #gnb .close-btn::after {
     transform: rotate(-45deg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+
+  #gnb .open-btn {
+    display: none;
+  }
+
+  #gnb .sub-menu {
+    display: none;
   }
 }

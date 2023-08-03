@@ -177,7 +177,7 @@
     100% {
       transform: translateX(0);
     }
-  }F
+  }
 
   .work-container .gallary-list:hover {
     animation: work-swipe 18s infinite normal;
@@ -241,6 +241,10 @@
     font-size: 1.2rem;
   }
 
+  .work-container .gallary-list img {
+    width: 22rem;
+  }
+
   .sns-container.instagram .gallary-list img {
     width: 12rem;
   }
@@ -279,5 +283,11 @@
 
   .to-contact:hover .hover-img {
     display: block;
+  }
+}
+
+@media screen and (min-height: 730px) {
+  .info-container {
+    min-height: 50vh;
   }
 }
