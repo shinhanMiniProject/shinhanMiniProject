@@ -260,6 +260,13 @@
 
   .work-container .gallary-list img {
     width: 22rem;
+    height: auto;
+  }
+
+  .work-container .gallary-list li:nth-child(2n) img {
+    width: 18rem;
+    height: auto;
+    padding: 3rem;
   }
 
   .youtube iframe {
