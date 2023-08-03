@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'omyu_pretty';
+    background-color: rgb(255, 248, 239);
+}
+@media screen and (min-width:320px),
+sreen and (min-height:320px) and (orientation:landscape) {
+    .main-img{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .wrap{
+        width: 90%;
+        margin: 0 auto;
+        height: 100vh;
+    }
+    
+    section{
+        padding: 20px;
+    }
+    section h2{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    section h3{
+        font-size: 1.3rem;
+        margin: 10px 0 ;
+        border-bottom: 1px solid black;
+        padding-bottom: 20px;
+    }
+    section{
+        font-size: 15px;
+    }
+    .option1-wrap, .option2-wrap{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid black;
+
+    }
+    .hide1{
+        display: none;
+        font-size: 0.5rem;
+    }
+
+    .hide2{
+        display: none;
+        font-size: 0.5rem;
+    }
+    
+    .option2-wrap{
+        border-bottom: 2px solid black
+    }
+    .mid img{
+        width: 1.3rem;
+    }
+    .mid p{
+        font-size: 1rem;
+    }
+    .spanS{
+        font-size: 0.8rem;
+    }
+    .color1,.color2{
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        background-color: rgb(0, 255, 0);
+        margin: 0;
+        padding: 0;
+    }
+    .color2{
+        background-color: black;
+    }
+    .midin{
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom:0.5rem ;
+    }
+    .btn{
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .btn button{
+        padding: 0.5rem 2rem;
+    }
+    #btn1{
+        background-color: rgb(57, 57, 57);
+        color: rgb(255, 255, 255);
+        border: 0;
+    }
+    #btn2{
+        background-color: rgb(245, 217, 180);
+        border: 0;
+    }
+    .select{
+        padding: 0.2rem 50px;
+        width: 100%;
+        border: 1px solid gainsboro;
+        font-size: 0.8rem;
+        background-color: rgb(248, 248, 240);
+    }
+
+}
+
+@media screen and (min-width:768px),
+sreen and (min-height:768px) and (orientation:landscape){
+    .wrap{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;  
+        justify-content: center; 
+        position: relative;    
+        top: 5rem;
+    }
+    .main-img{
+        width: 20rem;
+        height: 30rem;
+        position: relative;
+        top: 1rem;
+    }
+    section{
+        width: 25rem;
+        padding: 0;
+        padding-left: 20px;
+    }
+    section h2,section h3{
+        font-size: 1.5rem;
+    }
+    section p{
+        font-size: 1rem;
+    }
+    .hide1,.hide2{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width:1024px),
+sreen and (min-height:1024px) and (orientation:landscape){
+    section{
+        width: 30rem;
+        padding: 0;
+        padding-left: 20px;
+    }
+    .main-img{
+        width: 30rem;
+        height: 40rem;
+        position: relative;
+        top: 1rem;
+    }
+}
