@@ -35,9 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
     function fadeInOnScroll() {
         fadeImages.forEach(function (image) {
             const bottom_of_element = image.offsetTop + image.offsetHeight/2;
-            const bottom_of_window = window.pageYOffset + window.innerHeight;
+            const bottom_of_window = window.scrollY + window.innerHeight;
 
             if (bottom_of_window > bottom_of_element) {
+                console.log(image);
                 image.style.opacity = "1";
                 image.style.transform = "translateY(0)";
             }
