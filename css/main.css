@@ -207,16 +207,16 @@
   }
 
   .work-container .gallary-list img {
-    height: 31rem;
+    height: 16rem;
   }
 
   .work-container .gallary-list li:nth-child(2n) img {
-    height: 26rem;
+    height: 12rem;
     padding: 3rem;
   }
 
   .sns-container.instagram .gallary-list img {
-    width: 50vw;
+    width: 12rem;
     height: auto;
   }
 
@@ -251,10 +251,6 @@
 
   .work-container .gallary-list img {
     width: 22rem;
-  }
-
-  .sns-container.instagram .gallary-list img {
-    width: 12rem;
   }
 
   .youtube iframe {
