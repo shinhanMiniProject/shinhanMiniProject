@@ -17,7 +17,13 @@ sreen and (min-height:320px) and (orientation:landscape) {
     .wrap{
         width: 90%;
         margin: 0 auto;
-        height: 200vh;
+        min-width:100%;
+        position: relative; 
+    }
+    .footer-wrap{
+        bottom: 0;
+        position: absolute;
+        height: 10rem;
     }
     
     section{
