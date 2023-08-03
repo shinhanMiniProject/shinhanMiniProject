@@ -120,6 +120,7 @@
     display: flex;
     gap: 1rem;
     position: relative;
+    align-items: center;
   }
 
   .gallary-list li {
@@ -133,7 +134,7 @@
 
   .work-container .gallary-list li:nth-child(2n) img {
     height: 10rem;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
   }
 
   .sns-container.instagram .gallary-list {
@@ -175,7 +176,7 @@
       transform: translateX(0);
     }
     70% {
-      transform: translateX(-300%);
+      transform: translateX(-100%);
     }
     100% {
       transform: translateX(0);
@@ -187,7 +188,7 @@
       transform: translateX(0);
     }
     70% {
-      transform: translateX(calc((450vw + 9rem) * -1));
+      transform: translateX(-80rem);
     }
     100% {
       transform: translateX(0);
@@ -272,12 +273,24 @@
     height: 36rem;
   }
 
+  @keyframes work-swipe {
+    0% {
+      transform: translateX(0);
+    }
+    70% {
+      transform: translateX(-60%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
   @keyframes insta-swipe {
     0% {
       transform: translateX(0);
     }
     70% {
-      transform: translateX(-65rem);
+      transform: translateX(-60rem);
     }
     100% {
       transform: translateX(0);
