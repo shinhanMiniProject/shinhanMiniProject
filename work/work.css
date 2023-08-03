@@ -1,0 +1,312 @@
+@media screen and (min-width:1024px) {
+    /* body */
+    body {
+        margin: 0;
+        padding: 0;
+        color: black;
+        background-color: #f1f2e1;
+    }
+
+    /* 상단 main wrap */
+    #mainwrap {
+        width: 1000px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* margin: 0px 10vw; */
+    }
+
+    /* 상단 main section */
+    #mainwrap section {
+        /* display: inline-block; */
+        width: 50%;
+    }
+
+    /* 상단 main nav */
+    .mainnav {
+        width: 40%;
+    }
+    .mainnav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .mainnav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* img contents */
+    .workcontent {
+        width: 1000px;
+        margin: auto;
+        padding: 0;
+    }
+    .workcontent ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+
+    }
+    .workcontent ul li {
+        width: 47.5%;
+        list-style: none;
+        display: inline-block;
+        padding: 0px;
+        padding-top: 2vh;
+    }
+    .workcontent ul li a{
+        list-style: none;
+    }
+    .imgcon{
+        position: relative;
+        display: inline-block;
+        opacity: 1;
+    }
+    .imgcon:hover {
+        opacity: 0.5;
+    }
+    .imgtxt {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        opacity: 0;
+        color: white;
+        font-weight: bold;
+    }
+    .imgcon:hover > .imgtxt {
+        opacity: 1;
+    }
+
+    /* img */
+    img {
+        width: 475px;
+    }
+
+    /* 구분선 */
+    .line {
+        margin: 1vh 0;
+        border: 0.5px solid black;
+    }    
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    /* body */
+    body {
+        margin: 0;
+        padding: 0;
+        color: black;
+        background-color: #f1f2e1;
+        overflow-y: scroll;
+    }
+
+    /* 상단 main wrap */
+    #mainwrap {
+        margin: 20px;
+        padding-bottom: 50px;
+        padding-top: 20px;
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between; */
+    }
+    /* 상단 main section */
+    /* #mainwrap section {
+        width: 50%;
+    } */
+    .fadeIn {
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    /* 상단 main nav */
+    .mainnav {
+        /* width: 40%; */
+        display: none;
+    }
+    /* .mainnav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .mainnav a {
+        text-decoration: none;
+        color: black;
+    } */
+
+    /* img contents */
+    .workcontent {
+        width: 90%;
+        margin: auto;
+        padding: 0;
+        padding-top: 30px;
+    }
+    .workcontent ul {
+        /* display: block; */
+        /* flex-direction: row; */
+        /* justify-content: space-between; */
+        /* flex-wrap: wrap; */
+        margin: 0;
+        padding: 0;
+    }
+    .workcontent ul li {
+        margin-top: 10px;
+        list-style: none;
+        display: block;
+        /* padding: 0px; */
+        /* padding-top: 2vh; */
+    }
+    /* .workcontent ul li a{
+        list-style: none;
+    } */
+
+    .imgcon {
+        /* display: inline; */
+        /* position: relative; */
+    }
+    .imgcon:hover {
+        opacity: 0.5;
+    }
+    .imgtxt {
+        /* position: absolute; */
+        position: relative;
+        width: 30vw;
+        height: 1vh;
+        top: -30vh;
+        left: 5vw;
+        opacity: 0;
+        color: white;
+        font-weight: bold;
+    }
+    .imgcon:hover > .imgtxt {
+        opacity: 1;
+    }
+
+    /* img */
+    .image {
+        position: relative;
+        width: 100%;
+        opacity: 0;
+        transform: translateY(80px);
+        transition: opacity 1s, transform 1.5s;
+    }
+
+    /* 구분선 */
+    .line {
+        margin: 1vh 0;
+        border: 0.5px solid black;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    /* body */
+    body {
+        margin: 0;
+        padding: 0;
+        color: black;
+        background-color: #f1f2e1;
+        overflow-y: scroll;
+    }
+
+    /* 상단 main wrap */
+    #mainwrap {
+        margin: 20px;
+        padding-bottom: 50px;
+        padding-top: 20px;
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between; */
+    }
+    /* 상단 main section */
+    /* #mainwrap section {
+        width: 50%;
+    } */
+    .fadeIn {
+        opacity: 0;
+        transition: opacity 1s;
+        font-size: 1.2rem;
+    }
+    /* 상단 main nav */
+    .mainnav {
+        /* width: 40%; */
+        display: none;
+    }
+    /* .mainnav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .mainnav a {
+        text-decoration: none;
+        color: black;
+    } */
+
+    /* img contents */
+    .workcontent {
+        width: 90%;
+        margin: auto;
+        padding: 0;
+        padding-top: 30px;
+    }
+    .workcontent ul {
+        /* display: block; */
+        /* flex-direction: row; */
+        /* justify-content: space-between; */
+        /* flex-wrap: wrap; */
+        margin: 0;
+        padding: 0;
+    }
+    .workcontent ul li {
+        margin-top: 10px;
+        list-style: none;
+        display: block;
+        /* padding: 0px; */
+        /* padding-top: 2vh; */
+    }
+    /* .workcontent ul li a{
+        list-style: none;
+    } */
+
+    .imgcon {
+        /* display: inline; */
+        /* position: relative; */
+    }
+    .imgcon:hover {
+        /* opacity: 0.5; */
+    }
+    .imgtxt {
+        display: none;
+        /* position: relative;
+        width: 30vw;
+        height: 1vh;
+        top: -30vh;
+        left: 5vw;
+        opacity: 0;
+        color: white;
+        font-weight: bold; */
+    }
+    /* .imgcon:hover > .imgtxt {
+        opacity: 1;
+    } */
+
+    /* img */
+    .image {
+        position: relative;
+        width: 100%;
+        opacity: 0;
+        transform: translateY(80px);
+        transition: opacity 1s, transform 1.5s;
+    }
+
+    /* 구분선 */
+    .line {
+        margin: 1vh 0;
+        border: 0.5px solid black;
+    }
+}
