@@ -50,9 +50,11 @@
   /* about section */
 
   .info-container {
-    margin: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
     padding-top: 2rem;
     min-height: 70vh;
+    max-width: 87rem;
   }
 
   .info-container p {
@@ -76,11 +78,15 @@
   section footer {
     padding-bottom: 5rem;
     border-bottom: 1px solid black;
+    max-width: 87rem;
+    margin: 0 auto;
   }
 
   /* instagram & youtube */
   .sns-container {
-    margin: 1rem 1rem 5rem;
+    max-width: 87rem;
+    margin: 0 auto;
+    padding: 1rem 1rem 5rem;
   }
 
   .sns-container header {
