@@ -2,13 +2,22 @@
 
   /* common */
 
+  @font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   * {
     color: #363636;
+    font-family: 'omyu_pretty', sans-serif;
   }
 
   body {
     margin: 0;
     padding: 0;
+    background-color: #363636;
   }
 
   .blind {
@@ -177,7 +186,7 @@
     100% {
       transform: translateX(0);
     }
-  }F
+  }
 
   .work-container .gallary-list:hover {
     animation: work-swipe 18s infinite normal;
@@ -194,21 +203,26 @@
 
 @media screen and (min-width: 768px) {
   /* tablet */
+  #wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .info-container {
     min-height: 50vh;
   }
 
   .work-container .gallary-list img {
-    height: 31rem;
+    height: 16rem;
   }
 
   .work-container .gallary-list li:nth-child(2n) img {
-    height: 26rem;
+    height: 12rem;
     padding: 3rem;
   }
 
   .sns-container.instagram .gallary-list img {
-    width: 50vw;
+    width: 12rem;
     height: auto;
   }
 
@@ -219,6 +233,9 @@
 
 @media screen and (min-width: 1024px) {
   /* pc */
+  #wrap {
+    width: 80%;
+  }
 
   .info-container {
     margin-top: 4rem;
@@ -241,8 +258,15 @@
     font-size: 1.2rem;
   }
 
-  .sns-container.instagram .gallary-list img {
-    width: 12rem;
+  .work-container .gallary-list img {
+    width: 22rem;
+    height: auto;
+  }
+
+  .work-container .gallary-list li:nth-child(2n) img {
+    width: 18rem;
+    height: auto;
+    padding: 3rem;
   }
 
   .youtube iframe {
@@ -279,5 +303,11 @@
 
   .to-contact:hover .hover-img {
     display: block;
+  }
+}
+
+@media screen and (min-height: 730px) {
+  .info-container {
+    min-height: 50vh;
   }
 }

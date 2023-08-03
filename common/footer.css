@@ -1,0 +1,70 @@
+@media screen and (min-width:320px),
+sreen and (min-height:320px) and (orientation:landscape) {
+    body{
+        margin: 0;
+    }
+    a{
+       color: black;
+       text-decoration: none;
+       padding: 0;
+       margin: 0;
+    }
+    li{
+        list-style: none;
+    }
+    .footer-head, .footer-information, .footer-social, .footer-openingHour{
+        position: relative;
+        border-top: 1px solid black;
+        padding: 6px 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 30px;
+    }
+    .footer-container{
+        background-color: rgb(84, 136, 100);
+        font-size: 5px;
+    }
+    .footer-head img{
+        width: 20px;
+        margin-top: 10px;
+    }
+    .footer-head p, .footer-head h4{
+        margin: 5px 0px 15px 0px;
+    }
+    .footer-container h6{
+        font-weight:200;
+    }
+    .footer-social{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-social ul{
+        padding: 0;
+    }
+    .footer-social ul a{
+        margin: 0;
+    }
+
+    
+}
+
+@media screen and (min-width:768px),
+sreen and (min-height:768px) and (orientation:landscape){
+    .footer-head, .footer-information, .footer-social, .footer-openingHour{
+        margin: 0 auto;
+        border: 0;
+        display: inline-block;
+        width: 25%;
+    }
+    .footer-container{
+        display: flex;
+        border-top: 1px solid black;
+        justify-content: space-evenly;
+
+    }
+    .footer-head, .footer-information, .footer-social{
+        border-right: 1px solid black;
+    }
+    
+}
