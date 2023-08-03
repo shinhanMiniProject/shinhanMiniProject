@@ -1,3 +1,7 @@
-function changeImg(){
-    document.getElementById('img1').src='https://cdn.imweb.me/thumbnail/20221220/04aa8df368be9.jpg'
+function changeImg(imgElement, newImgSrc) {
+    imgElement.src = newImgSrc;
+}
+
+function restoreImg(imgElement, originalImgSrc) {
+    imgElement.src = originalImgSrc;
 }

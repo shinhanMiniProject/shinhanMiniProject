@@ -56,9 +56,11 @@ sreen and (min-height:320px) and (orientation:landscape) {
     .wrap_head nav{
         display: none;
     }
-    .hover_img{
-        position: absolute;
+    section{
+        padding:0;
     }
+
+
 }
 
 @media screen and (min-width:768px),
@@ -74,12 +76,16 @@ sreen and (min-height:768px) and (orientation:landscape) {
     section li{
         width: calc(33.3333% - 2vh);
         display: inline-block;
+        padding: 0 5px;
     }
     section li img{
         width: 100%;
     }
     section{
         padding-top: 20px;
+    }
+    section{
+        padding:30px 50px;
     }
 
 }
@@ -126,7 +132,7 @@ sreen and (min-height:1024px) and (orientation:landscape){
         color: black;
     }
     section p{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .object_name{
         font-weight: bold;
@@ -138,5 +144,8 @@ sreen and (min-height:1024px) and (orientation:landscape){
     section img:hover{
         background-color: black;
         /* background-image: url('https://cdn.imweb.me/thumbnail/20221220/605388e671e74.jpg'); */
+    }
+    section{
+        padding:50px 150px;
     }
 }
