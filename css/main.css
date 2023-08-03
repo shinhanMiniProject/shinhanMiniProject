@@ -209,10 +209,6 @@
 
 @media screen and (min-width: 768px) {
   /* tablet */
-  #wrap {
-    width: 90%;
-    margin: 0 auto;
-  }
 
   .info-container {
     min-height: 50vh;
@@ -239,9 +235,6 @@
 
 @media screen and (min-width: 1024px) {
   /* pc */
-  #wrap {
-    width: 80%;
-  }
 
   .info-container {
     margin-top: 4rem;
