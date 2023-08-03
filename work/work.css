@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 /* desktop */
 @media screen and (min-width:1024px) {
     /* body */
     body {
+        font-family: 'omyu_pretty';
         margin: 0;
         padding: 0;
         color: black;
@@ -11,7 +18,7 @@
     /* 상단 main wrap */
     #mainwrap {
         width: 1000px;
-        height: 350px;
+        height: 290px;
         margin: auto;
         display: flex;
         flex-direction: row;
@@ -24,7 +31,10 @@
         /* display: inline-block; */
         width: 50%;
     }
-
+    .fadeIn {
+        opacity: 0;
+        transition: opacity 1s;
+    }
     /* 상단 main nav */
     .mainnav {
         width: 45%;
@@ -80,6 +90,7 @@
         opacity: 0.5;
     }
     .imgtxt {
+        width: 90%;
         position: absolute;
         top: 20%;
         left: 5%;
@@ -92,8 +103,13 @@
     }
 
     /* img */
-    img {
+    .image {
+        position: relative;
         width: 475px;
+        height: 600px;
+        opacity: 0;
+        transform: translateY(80px);
+        transition: opacity 1s, transform 1.5s;
     }
 
     /* 구분선 */
@@ -107,6 +123,7 @@
 @media screen and (min-width:768px) and (max-width:1023px){
     /* body */
     body {
+        font-family: 'omyu_pretty';
         margin: 0;
         padding: 0;
         color: black;
@@ -185,7 +202,7 @@
         position: relative;
         width: 30vw;
         height: 1vh;
-        top: -30vh;
+        top: -40vh;
         left: 5vw;
         opacity: 0;
         color: white;
@@ -215,6 +232,7 @@
 @media screen and (min-width:320px) and (max-width:767px) {
     /* body */
     body {
+        font-family: 'omyu_pretty';
         margin: 0;
         padding: 0;
         color: black;

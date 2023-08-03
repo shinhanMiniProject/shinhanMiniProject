@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         fadeImages[0].style.opacity = "1";
         fadeImages[0].style.transform = "translateY(0)";
+        fadeImages[1].style.opacity = "1";
+        fadeImages[1].style.transform = "translateY(0)";
     }
 
     // 메인 메뉴 선택 효과
