@@ -90,7 +90,6 @@
         opacity: 1;
     }
     .imgcon:hover {
-        filter: grayscale(0.8);
         opacity: 0.7;
     }
     .imgtxt {
@@ -201,7 +200,6 @@
         /* position: relative; */
     }
     .imgcon:hover {
-        filter: grayscale(0.8);
         opacity: 0.7;
     }
     .imgtxt {
